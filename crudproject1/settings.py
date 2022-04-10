@@ -23,11 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=!z%7&q6dve81l8*bs&g8o%@yq-k3@9bgwvh(b7q(z(%c0-8^4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
+    'https://zonestudent.herokuapp.com/',
     'localhost'
-    'zonestudent.herokuapp.com'
+    '127.0.0.1'
 ]
 
 # Application definition
