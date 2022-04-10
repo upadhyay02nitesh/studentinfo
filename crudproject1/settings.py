@@ -25,10 +25,7 @@ SECRET_KEY = '=!z%7&q6dve81l8*bs&g8o%@yq-k3@9bgwvh(b7q(z(%c0-8^4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1'
-    'zonestudent.herokuapp.com'
-]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
