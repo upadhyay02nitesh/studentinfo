@@ -9,10 +9,11 @@ def add_show(request):
   fm = StudentRegistration(request.POST,request.FILES)
   if fm.is_valid():
    nm = fm.cleaned_data['name']
+   hm = fm.cleaned_data['Fathername']
    em = fm.cleaned_data['email']
    pw = fm.cleaned_data['password']
    im = fm.cleaned_data['image']
-   reg = User(name=nm, email=em, password=pw,image=im)
+   reg = User(name=nm,Fathername=hm, email=em, password=pw,image=im)
    reg.save()
    fm = StudentRegistration()
  else:
